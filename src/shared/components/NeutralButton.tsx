@@ -1,11 +1,18 @@
 import { styleClassName } from "../constants/style"
 
-/** cosnt {label, ...rest} = props */
-const NeutralButton = (props: any) => {
-    const { label, ...rest } = props
+interface AdditionalProps {
+    label: string
+}
+
+type DefaultButtonProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+type NeutralButtonProps = DefaultButtonProps & AdditionalProps
+
+const NeutralButton = (props: NeutralButtonProps) => {
+    /** MUST specify const from addtional props */
+    const { label, ...defaultButtonProps } = props
     return (
         <>
-            <button {...rest} className={`${styleClassName.button}`}>{label}</button>
+            <button {...defaultButtonProps} className={`${styleClassName.button}`}>{label}</button>
         </>
     )
 }

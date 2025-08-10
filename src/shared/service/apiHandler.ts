@@ -8,7 +8,7 @@ const awaitAndSet = async (promise: Promise<any>, setFunction: any) => {
     setFunction(result)
 }
 
-const getAllNvimPlugins = async () => {
+export const getAllNvimPlugins = async () => {
     const response = await axiosNeon.get("/")
     const pluginArray = response.data
     return pluginArray

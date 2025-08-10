@@ -1,5 +1,5 @@
 import { Outlet } from "react-router"
-import { styleClassName } from "../../constants/style"
+import { styleClassName } from "../../shared/constants/style"
 
 const AppLayout = () => {
     return (

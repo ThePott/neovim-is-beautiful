@@ -1,10 +1,11 @@
 export const colorClassName = {
-    borderVivid: "border-1 border-black/60 dark:border-white/60 ",
-    borderMuted: "border-1 border-blck/30 dark:border-white/30",
+    borderVivid: "border-1 border-black/30 dark:border-white/30 ",
+    borderMuted: "border-1 border-black/10 dark:border-white/10",
     fontVivid: "text-black/90 dark:text-white/90",
     fontMuted: "text-black/60 dark:text-white/60",
     fontVividInverted: "text-white/90 dark:text-black/90",
     bg: "bg-white dark:bg-black",
+    bgMuted: "bg-black/5 dark:bg-white/5",
     bgNeutral: "transition bg-black/75 hover:bg-black/60 active:bg-black/45 dark:bg-white/75 dark:hover:bg-white/60 dark:active:bg-white/45"
 }
 
